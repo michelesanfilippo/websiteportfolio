@@ -1,0 +1,14 @@
+{
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "myscript": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Michele Sanfilippo",
+  "license": "UniPA",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
