@@ -14,4 +14,107 @@
         background: #fff;
         @include easeOut;
     }
+
+    //Ui for menu button
+    &.close{
+        //see css transform properties
+        transform: rotate(180deg);
+        .btn-line{
+            //first line
+            &:nth-child(1){
+                transform: rotate(45deg) translate(5px,5px);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:nth-child(3){
+                transform: rotate(-45deg) translate(7px,-6px);
+            }
+        }
+    }
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+
+    &.show{
+        visibility: visible;
+    }
+
+    &-branding, &-nav{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    &-nav{
+        margin: 0;
+        padding: 0;
+        background: rgba(darken($primary-color, 15), 0.7);
+        list-style: none;
+        transform: translate3d(100%,0,0);
+        @include easeOut;
+
+        &.show{
+            transform: translate3d(0,0,0)
+        }
+    }
+
+    &-branding{
+        background: rgba(darken($primary-color, 12), 0.7);
+        transform: translate3d(-100%,0,0);
+        @include easeOut;
+
+        &.show{
+            transform: translate3d(0,0,0);
+        }
+        .portrait{
+            width: 250px;
+            height: 250px;
+            background: url('../img/portrait.jpeg');
+            background-size: cover;
+            border-radius: 55%;
+            border: solid 2px $secondary-color;
+        }
+    }
+
+    .nav-item{
+        transform: translate3d(0,300px,0);
+        @include easeOut;
+
+        &.show{
+            transform: translate3d(0,0,0);
+        }
+        &.current > a{
+            color: #fff;
+        }
+    }
+
+    .nav-link{
+        display: inline-block;
+        position: relative;
+        font-size: 22px;
+        font-weight: 200;
+        padding: 15px;
+        padding: 1rem 0;
+        text-decoration: solid;
+        &:hover{
+            color: #fff;
+            @include easeOut;
+        }
+    }
+}
+
+@for $x from 1 through 3{
+    .nav-item:nth-child(#{$x}){
+        transition-delay: $x * 0.1s;
+    }
 }
