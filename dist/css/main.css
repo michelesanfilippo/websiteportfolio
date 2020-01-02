@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #555;
+  background: #666;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -12,6 +12,14 @@ body {
     background: url(../img/macimg.jpg);
     background-attachment: fixed;
     background-size: cover; }
+    body#bg-img .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(102, 102, 102, 0.7); }
 
 h1, h2, h3 {
   margin: 0;
@@ -20,11 +28,10 @@ h1, h2, h3 {
     font-size: 4rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.4rem 0.8rem;
-    background: #565656; }
+    padding: 0.4rem; }
 
 a {
-  color: #fff;
+  color: #cc1;
   text-decoration: none; }
 
 header {
@@ -33,7 +40,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #cc1; }
 
 main {
   padding: 4rem;
@@ -43,7 +50,7 @@ main {
     main .icons a {
       padding: 0.5rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #fff;
         transition: all 0.4s ease-out; }
   main#home {
     overflow: hidden; }
