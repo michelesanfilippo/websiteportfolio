@@ -62,3 +62,31 @@ main{
         }
     }
 }
+
+.about-info{
+    display: grid;
+    grid-template-areas: 'bioimg bio bio';
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-img{
+    grid-area: bioimg;
+    width: 275px;
+    height: 275px;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 2px solid;
+}
+
+.bio{
+    grid-area: bio;
+    font-size: 1.5rem;
+}
+
+#main-footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    
+}
