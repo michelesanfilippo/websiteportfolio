@@ -1,8 +1,11 @@
-## Creating a Portfolio website
+# Creating a Portfolio website
 
-**Made by Michele Sanfilippo**
-Feel free to get inspired by this code to make your own portfolio page.
+## Other projects [here](https://github.com/michelesanfilippo)
 
-REMEMBER: install node js and sass, remember to run your script(whatever you call it) before reloading your page(npm run "yourscriptname").
+Simple website built using html/css/javascript.
+You can use this code and modify whatever you want to build your own website.
 
-see other projects [Michele Sanfilippo](https://github.com/michelesanfilippo?tab=repositories)
+ Remember to install node js and sass.
+ Run your script(whatever you call it) before reloading your page(npm run "yourscriptname").
+
+Format: ![websiteimg](https://michelesanfilippo.netlify.com)
