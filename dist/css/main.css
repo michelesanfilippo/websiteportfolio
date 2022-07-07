@@ -178,8 +178,8 @@ main {
 
 .bio-img {
   grid-area: bioimg;
-  width: 315px;
-  height: 290px;
+  width: 300px;
+  height: 270px;
   margin: auto;
   border-radius: 50%;
   border: #ffc142 2px solid; }
