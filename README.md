@@ -8,3 +8,4 @@ You can use this code and modify whatever you want to build your own website.
  Remember to install node js and sass.
  Run your script(whatever you call it) before reloading your page(npm run "yourscriptname").
 
+You can have a look at the result: michelesanfilippo.netlify.com
